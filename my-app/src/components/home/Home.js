@@ -1,8 +1,8 @@
+import './Home.css'
 import Tours from "../tours/Tours"
 import Header from "../header/Header"
 import Footer from "../footer/Footer"
-import "./Home.css";
-const data = require('./../../data/db.json')
+const data = require ('./../../data/db.json');
 
 function Home() {
     return (
@@ -11,6 +11,7 @@ function Home() {
             <Tours arrayData={data}/>
             <Footer/>
         </>
+
     )
 }
 export default Home;
