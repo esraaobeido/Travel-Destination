@@ -1,13 +1,27 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
 import React from 'react';
-import Home from '../src/components/home/Home.js';
-const data = require('../src/data/db.json');
+import Home from "./components/home/Home.js"
+import Tours from './components/tours/Tours.js';
+import TourDetails from './components/TourDetails/TourDetails.js'
+
+
+
 
 function App() {
   return (
- <>
- <Home/>
- </>
+   <>
+    {/* <TourDetails/> */}
+    <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/tourdetails" element={<TourDetails/>}/>
+    <Route path ="/Tours" element={<Tours/>}/>
+    <Route path="/city/:id" element={<TourDetails/>}/>
+    </Routes>
+  </>
   );
 }
 
 export default App;
+

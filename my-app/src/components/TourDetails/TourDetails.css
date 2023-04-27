@@ -1,0 +1,51 @@
+.details {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .details h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .details img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .details p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .details .description {
+    margin-bottom: 20px;
+  }
+  
+  .details .toggle-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .details .toggle-description button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color:blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .details .toggle-description button:hover {
+    background-color: firebrick;
+  }
+  
+  .details .toggle-description .price {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
